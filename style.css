@@ -1,14 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-
-
 *,
 *:before,
 *:after {
 	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
 }
 
 
@@ -21,6 +17,7 @@ body{
 }
 
 #editor{
+    padding: 5px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -73,7 +70,7 @@ body{
     border-radius: 40px;
     background-color: rgb(91, 94, 111);
     color: rgb(244, 244, 244);
-    margin-left: 60px;
+    margin-left: 20px;
 }
 
 
@@ -91,7 +88,6 @@ body{
 }
 
 #output{
-    padding: 5px;
     position: relative;
     resize: none;
     margin-left: auto;
@@ -102,3 +98,96 @@ body{
     background-color: transparent;
 }
 
+#PreviewButton{
+    width: 90px;
+    height: 20px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: rgb(222, 69, 69);
+    color: #fff;
+    outline: none;
+    position: relative;
+}
+
+.previewButtonDepois{
+    margin-bottom: 40px;
+}
+
+#PreviewButton:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+#preview{
+    padding: 15px;
+    margin-top: 0px;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    background-color: transparent;
+}
+
+
+.preview-toggle{
+    color: rgb(42, 43, 48);
+}
+
+.pre{
+    height: fit-content;
+    width: 80%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.297) 0px 0px 12px;
+}
+
+.pre-dis{
+    display: flex;
+}
+
+.pb{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 90%;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+#attA{
+    border: none;
+    background-color: rgb(108, 222, 106);
+    color: #fff;
+    border-radius: 2px;
+    width: 90px;
+    height: 20px; 
+    position: absolute;
+    top: -40px;
+}
+
+.btno{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btns{
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}

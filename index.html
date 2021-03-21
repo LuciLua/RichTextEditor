@@ -16,6 +16,8 @@
                 <li><button title="Itálico" class="tool-btn" type="button" data-command="italic"        id="but">  <span id="sp3">  <i style="font-weight: 600;">i</i>  </span></button></li>
                 <li><button title="Criar Link" class="tool-btn" type="button" data-command="createlink"    id="but">  <span id="sp4"   style="font-weight: 800; font-family: poppins;"><></span></button></li>
                 <li><button title="Alinhar" class="tool-btn" type="button" data-command="justifyFull"   id="but">  <span id="sp5">  <p>|||</p></span></button></li>
+                <li><button title="Linha" class="tool-btn" type="button" data-command="insertHorizontalRule"   id="but">  <span id="sp6">  <p>__</p></span></button></li>
+
 
                 <li><button title="Trocar tema" class="tool-btn" type="button" onclick="mud()"              id="but">  <span id="color"> <b>Color</b></span></button></li>
             </ul>
@@ -27,6 +29,20 @@
         quasi itaque, nisi optio eos error deleniti vero necessitatibus
         omnis aspernatur repellendus. Ad, consectetur!
      </div>
+    </div>
+
+
+    <div class="pb">
+        <div class="btns">
+            <button class="btno" id="PreviewButton" onclick="bt()"> Ver HTML</button> 
+        </div>
+            <div class="pb-2">
+                <div class="pre" id="pre">
+                    <button class="btno" id="attA" onclick="att()">Atualizar</button>
+                    <div name="" id="preview"></div>
+                </div>
+            </div>
+    </div>
     
 </body>
 <script src="app.js"></script>

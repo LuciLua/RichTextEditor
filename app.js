@@ -44,9 +44,6 @@ function mud(){
     sp6.classList.toggle('menu-fff')
     preview.classList.toggle('preview-toggle')
 
-
-
-
 };
 
 function bt(){

@@ -1,17 +1,8 @@
-var sp1 = document.getElementById('sp1');
-var sp2 = document.getElementById('sp2');
-var sp3 = document.getElementById('sp3');
-var sp4 = document.getElementById('sp4');
-var sp5 = document.getElementById('sp5');
-var sp6 = document.getElementById('sp6');
-
-var previewButton = document.getElementById('PreviewButton')
+var previewButton = document.querySelector('.btno')
 var preview = document.getElementById('preview')
 var pre = document.getElementById('pre')
-var attA = document.getElementById('attA')
 
-
-var output = document.getElementById('output');
+var output = document.querySelector('.output')
 let buttons = document.getElementsByClassName('tool-btn');
 
 
@@ -39,12 +30,11 @@ function mud(){
     var out = document.querySelector('.output')
     out.classList.toggle('output-dark');
    
-    sp1.classList.toggle('sp')
-    sp2.classList.toggle('sp')
-    sp3.classList.toggle('sp')
-    sp4.classList.toggle('sp')
-    sp5.classList.toggle('sp')
-    sp6.classList.toggle('sp')
+    spf = document.querySelectorAll('.sp-f')
+
+    for(let i = 0; i < spf.length; i++){
+        spf[i].classList.toggle('sp-d');
+    }
 
     preview.classList.toggle('preview-toggle')
 

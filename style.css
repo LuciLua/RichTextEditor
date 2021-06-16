@@ -7,6 +7,8 @@
     font-family: Arial;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap');
+
 
 body{
     width: 100%;
@@ -35,7 +37,7 @@ body{
     position: relative;
 }
 
-.bar-1{
+.editor .top{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.082);   
 
     width: 97%;
@@ -47,12 +49,12 @@ body{
     position: relative;
 }
 
-#ul-bar-1{
+.editor .top .bar{
     display: flex;
     top: 0;
 }
 
-#ul-bar-1 li{
+.editor .top .bar li{
     margin-left: 25px;
 
     list-style: none;
@@ -60,7 +62,7 @@ body{
     position: relative;
 }
 
-#but{
+.editor .top .bar li button{
     background-color: transparent;
     
     width: 30px;
@@ -111,7 +113,12 @@ body{
 }
 
 #output{
+    color: #595959;
     background-color: transparent;
+
+    line-height: 2;
+
+    font-family: 'Lexend', sans-serif;
     
     position: relative;
 

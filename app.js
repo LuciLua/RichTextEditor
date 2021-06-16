@@ -11,7 +11,7 @@ var pre = document.getElementById('pre')
 var attA = document.getElementById('attA')
 
 
-let output = document.getElementById('output');
+var output = document.getElementById('output');
 let buttons = document.getElementsByClassName('tool-btn');
 
 
@@ -29,19 +29,23 @@ for (let btn of buttons) {
 
 
 function mud(){
-    var element = document.getElementById("editor")
-    element.classList.toggle("edit");
 
+    var element = document.querySelector(".editor")
+    element.classList.toggle("editor-dark");
+    
     var body = document.body
     body.classList.toggle("b2");
+    
+    var out = document.querySelector('.output')
+    out.classList.toggle('output-dark');
+   
+    sp1.classList.toggle('sp')
+    sp2.classList.toggle('sp')
+    sp3.classList.toggle('sp')
+    sp4.classList.toggle('sp')
+    sp5.classList.toggle('sp')
+    sp6.classList.toggle('sp')
 
-    output.classList.toggle("text-fff")
-    sp1.classList.toggle('menu-fff')
-    sp2.classList.toggle('menu-fff')
-    sp3.classList.toggle('menu-fff')
-    sp4.classList.toggle('menu-fff')
-    sp5.classList.toggle('menu-fff')
-    sp6.classList.toggle('menu-fff')
     preview.classList.toggle('preview-toggle')
 
 };

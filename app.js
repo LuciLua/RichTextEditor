@@ -19,8 +19,11 @@ function mud(){
     var body = document.body
     body.classList.toggle("b2");
     
-    var out = document.querySelector('.output')
-    out.classList.toggle('output-dark');
+    var output = document.querySelector('.output');
+    output.classList.toggle('output-dark');
+
+    var preview = document.querySelector('.preview');
+    preview.classList.toggle('preview-dark');
 
     var moon = document.getElementById('moon')
     moon.classList.toggle('sun')
@@ -30,17 +33,14 @@ function mud(){
     for(let i = 0; i < spf.length; i++){
         spf[i].classList.toggle('sp-d');
     }
-
-    preview.classList.toggle('preview-toggle')
-
 };
 
 function bt(){
-    var output = document.querySelector('.output')
-
+    
     var previewButton = document.querySelector('.btno')
     var preview = document.getElementById('preview')
     var pre = document.querySelector('.pre')
+    var output = document.querySelector('.output')
 
     preview.innerText = output.innerHTML;
     

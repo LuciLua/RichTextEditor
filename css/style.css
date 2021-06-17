@@ -9,6 +9,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap');
 
+::-webkit-scrollbar{
+    width: 4px;
+    background-color: #1d1d1d3c;
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #c4c4c42a;
+    
+    border-radius: 10px;
+}
 
 body{
     width: 100%;
@@ -79,6 +91,9 @@ body{
     margin-right: auto;
     
     position: relative;
+
+    outline: none;
+    user-select: none;
 }
 
 .editor .top .bar li button{
@@ -119,9 +134,6 @@ body{
     transition: ease 0.3s;
 }
 
-.output-dark{
-    color: rgb(233, 233, 233);
-}
 
 .sp{
     color: #f9f9f9;
@@ -140,17 +152,21 @@ body{
     
     margin-left: auto;
     margin-right: auto;
-
+    
     width: 100%;
     height: calc(100% - 50px);
-
+    
     padding: 25px;
     
     outline: none;
     
     border: none;
-
+    
     overflow-y: scroll;
+}
+
+.output a{
+    cursor: pointer;
 }
 
 .output::-webkit-scrollbar, .output-dark::-webkit-scrollbar{
@@ -162,10 +178,9 @@ body{
     background-color: rgba(158, 158, 158, 0.234);
 }
 
-
-
 .output-dark{
-    color: #c4c4c4;
+    color: rgba(255, 255, 255, 0.541);
+
     line-height: 2;
     
     font-family: 'Lexend', sans-serif;
@@ -193,8 +208,10 @@ body{
     margin-bottom: 40px;
 }
 
-#preview{
+.preview{
     background-color: transparent;
+
+    color: #464646;
     
     width: 100%;
     height: fit-content;
@@ -206,9 +223,19 @@ body{
     position: relative;
 }
 
+.preview-dark{
+   background-color: transparent;
 
-.preview-toggle{
-    color: rgb(42, 43, 48);
+    color: rgba(255, 255, 255, 0.412);
+    
+    width: 100%;
+    height: fit-content;
+    
+    padding: 15px;
+    
+    margin-top: 0px;
+    
+    position: relative;
 }
 
 /* box visualization */

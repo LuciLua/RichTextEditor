@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rich Text Editor</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="editor">
@@ -55,8 +55,8 @@
                     </li>
                     <li>
                         <button title="Trocar tema" class="tool-btn" type="button" onclick="mud()">
-                            <span class="color">
-                                <b>Color</b>
+                            <span class="sp-f" id="color">
+                                <img id="moon" src="img/moon-stars.svg" alt="">
                             </span>
                         </button>
                     </li>
@@ -65,7 +65,6 @@
             <div class="output" contenteditable="true" spellcheck="false">
                 <b>Lorem ipsum</b>, dolor <br> sit amet consectetur adipisicing elit.
                 Iusto, tempora natus. Nobis beatae tenetur eius eaque 
-                quasi itaque, nisi optio eos error deleniti vero necessitatibus
                 omnis aspernatur repellendus.<br><br><i>Ad, consectetur!</i><br>
                 <a href='http://luci-lua.tk'>luci-lua.tk</a>
             </div>
@@ -75,8 +74,8 @@
                 <button class="btno" onclick="bt()"> Ver HTML</button> 
             </div>
             <div class="pb-2">
-                <div class="pre" id="pre">
-                    <button class="btno" id="attA" onclick="att()">Atualizar</button>
+                <div class="pre">
+                    <button class="btno" onclick="att()">Atualizar</button>
                     <div name="" id="preview"></div>
                 </div>
             </div>

@@ -21,6 +21,9 @@ function mud(){
     
     var out = document.querySelector('.output')
     out.classList.toggle('output-dark');
+
+    var moon = document.getElementById('moon')
+    moon.classList.toggle('sun')
    
     spf = document.querySelectorAll('.sp-f')
 
@@ -48,6 +51,6 @@ function bt(){
 
 function att(){
     var output = document.querySelector('.output')
-    
+
     preview.innerText = output.innerHTML;
 };
